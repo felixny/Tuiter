@@ -1,3 +1,6 @@
+import woman from "../Images/woman.jpeg"
+import elon from "../Images/elon.jpeg"
+
 const PostItem = ({ posts }) => {
     /* var title = ('')
     if (posts.title.includes("#H")) {
@@ -39,11 +42,11 @@ const PostItem = ({ posts }) => {
     var pic = ''
     if ((posts.image).includes("woman")) {
         pic = (<li className="list-group-item wd-list-group-item wd-img-size ">
-            <img src={posts.image} alt="ny pic" className="wd-inner wd-img-round-ny img-fluid " />
+            <img src={woman} alt="ny pic" className="wd-inner wd-img-round-ny img-fluid " />
         </li>)
     } else {
         pic = (<li className="list-group-item wd-list-group-item-first wd-img-size ">
-            <img src={posts.image} alt="space ship" className="wd-inner wd-img-round img-fluid" />
+            <img src={elon} alt="space ship" className="wd-inner wd-img-round img-fluid" />
         </li>)
     }
 
