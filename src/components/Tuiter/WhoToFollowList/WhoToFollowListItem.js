@@ -1,19 +1,31 @@
+import Javascript from '../Images/java.jpg';
+import space from '../Images/relativity.jpg';
+import virgin from '../Images/virgin.jpg';
+import nasa from '../Images/nasa.png';
+import tesla from '../Images/tesla.png';
+
 const WhoToFollowList = ({ who }) => {
 
   if (who.id === '1') {
     var bordertop = <span className="wd-list-border-top"></span>
     var borderbot = <span className="wd-list-border-bottom"></span>
+    var image = Javascript;
   } else if (who.id === '2') {
     bordertop = <span className=" wd-list-border-top"></span>
     borderbot = <span className="wd-list-border-bottom"></span>
+    var image = space;
   } else if (who.id === '3') {
     bordertop = <span className="wd-list-border-top"></span>
     borderbot = <span className="wd-list-border-bottom"></span>
+    var image = virgin;
   } else if (who.id === '4') {
     bordertop = <span className="wd-list-border-top"></span>
     borderbot = <span className="wd-list-border-bottom"></span>
+    var image = nasa;
   } else {
     bordertop = <span className="wd-list-border-top"></span>
+    var image = tesla;
+
   }
 
   return (<>
@@ -22,7 +34,7 @@ const WhoToFollowList = ({ who }) => {
       <a href="/#" className="list-group-item d-flex bd-highlight align-items-center" >
 
         <div className="p-0 bd-highlight">
-          <img src={who.avatarIcon} className="rounded-circle" width="50" alt="icon" />
+          <img src={image} className="rounded-circle" width="50" alt="icon" />
         </div>
         <div className="p-0 bd-highlight ms-3 ">
           <span className="wd-icon-lg">
