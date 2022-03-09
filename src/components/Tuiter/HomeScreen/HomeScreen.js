@@ -3,7 +3,7 @@ import NavigationSidebar from "../NavigationSidebar";
 /* import Posts from "../PostList/"; */
 import HomeComponent from "./HomeComponent";
 /* import ExploreComponent from "../ExploreScreen/ExploreComponent"; */
-import PostSummaryList from "../PostSummaryList/";
+import PostSummaryList from "../PostSummaryList";
 import "./home.css"
 
 const HomeScreen = () => {
